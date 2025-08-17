@@ -27,7 +27,7 @@
 ---
 
 ## Project Structure
-
+```
 LuminaXO/
 ├─ app.py # Main Flask application
 ├─ ai_persona.py # AI messages and persona
@@ -45,7 +45,7 @@ LuminaXO/
 │ └─ script.js # Frontend logic and voice control
 ├─ .venv/ # Python virtual environment
 └─ pycache/ # Python cache files
-
+```
 ---
 
 ## Installation & Setup
