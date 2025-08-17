@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tic-Tac-Toe AI — Mini Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+</head>
+<body>
+  <div class="page-card">
+    <header class="card-header">
+      <h1>LuminaXO</h1>
+      <div class="controls">
+        <label>
+          Difficulty
+          <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium" selected>Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </label>
+        <label>
+          You:
+          <select id="player_sym">
+            <option value="X" selected>X</option>
+            <option value="O">O</option>
+          </select>
+        </label>
+        <label>
+    <input type="checkbox" id="voiceToggle"> Voice
+  </label>
+        <button id="newBtn" class="btn">New</button>
+      </div>
+    </header>
+
+    <main class="card-body">
+      <div id="message" class="message">Loading…</div>
+
+      <div class="board" id="board">
+        <!-- 9 cells inserted by JS -->
+      </div>
+
+      <div class="score-row">
+        <div id="score">Wins 0 | Losses 0 | Ties 0</div>
+        <div>
+          <button id="replay" class="btn">Replay</button>
+          <button id="resetScores" class="btn ghost">Reset Scores</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="card-footer small">
+      <span id="mini-hint">Player moves = blue | AI moves = red | Win = green</span>
+    </footer>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
